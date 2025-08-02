@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Ulang Tahun Iki</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #ucapan {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    #ucapan img {
+      width: 200px;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="tampilUcapan()">pencet gue njing</button>
+
+  <div id="ucapan">
+    <h1>hbd Iki on ol</h1>
+    <img src="gambar.png" alt="stiker ulang tahun">
+  </div>
+
+  <audio autoplay loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+    Browser kamu gak support audio
+  </audio>
+
+  <script>
+    function tampilUcapan() {
+      document.getElementById("ucapan").style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>
